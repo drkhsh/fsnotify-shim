@@ -1,1 +1,1 @@
-module github.com/fsnotify-shim/fsnotify-shim
+module github.com/1g0rb0hm/fsnotify-shim

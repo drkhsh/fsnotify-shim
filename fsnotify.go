@@ -28,6 +28,7 @@ const (
 )
 
 func (o Op) Has(h Op) bool { return o&h != 0 }
+func (e Event) Has(op Op) bool { return e.Op.Has(op) }
 
 type Watcher struct {
 	Events chan Event

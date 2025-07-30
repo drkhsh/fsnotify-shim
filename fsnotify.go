@@ -25,6 +25,7 @@ const (
 	Remove
 	Rename
 	Chmod
+	Has
 )
 
 type Watcher struct {

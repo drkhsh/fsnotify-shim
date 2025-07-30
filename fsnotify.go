@@ -25,8 +25,9 @@ const (
 	Remove
 	Rename
 	Chmod
-	Has
 )
+
+func (o Op) Has(h Op) bool { return o&h != 0 }
 
 type Watcher struct {
 	Events chan Event
